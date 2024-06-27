@@ -1,0 +1,681 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+body{
+color: #444;
+text-align: center;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+
+body h1 {
+  font-family: 'calibri';
+}
+
+body p {
+  font-family: 'calibri';
+}
+
+.header {
+  width: 100%;
+  background-image: url(imagens/header.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px;
+  /* Media Query para dispositivos com largura máxima de 768px */
+  @media (max-width: 768px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding: 0px 0px;
+        flex-direction: column;
+    }
+}
+
+.headerfundo {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 40px 0px;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+@media (max-width: 768px) {
+  flex-direction: column;
+}
+}
+
+.headercontent {
+  width: 40%; /* Define a largura do conteúdo do header */
+    text-align: left; /* Centraliza o texto dentro do header-content */
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0px 10%
+    }
+}
+
+.headercontent video {
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 30%; padding-bottom: 20px;
+
+  @media (max-width: 768px){
+    width: 50%;
+  }
+}
+
+.mobileimage {
+  display: none;
+  @media (max-width: 768px){
+    display: block;
+    width: 100%;
+  }
+
+.item {
+  position: relative;
+  display: inline-block;
+}
+
+.item .diftext {
+  position: absolute;
+    bottom: 10px; /* Ajuste a posição conforme necessário */
+    left: 10px; /* Ajuste a posição conforme necessário */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: #fff; /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+}
+
+}
+
+
+.tipo1 {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+  background-color: transparent; /* Fundo transparente */
+  border: 2px solid white; /* Borda branca */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.1s, color 0.1s, padding 0.1s; /* Transição suave para mudanças */
+}
+
+.tipo1:hover {
+  padding: 12px 22px;
+  color: lightgrey;
+  border: 2px solid lightgrey;
+}
+
+.tipo2 {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+  background-color: #039C92; /* Fundo transparente */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.1s, color 0.1s, padding 0.1s; /* Transição suave para mudanças */
+  border: none;
+}
+
+.tipo2:hover {
+  padding: 12px 22px;
+}
+
+.diferenciais {
+  background-color: #039C92;
+  padding: 80px 0px 30px 0px;
+  color: white;
+}
+
+.colunas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.coluna1 {
+  font-family: 'calibri';
+  text-align: right;
+  flex: 1;
+  margin: 10px;
+  padding: 20px 20px 20px 120px;
+  max-height: 100%; /* Limita a altura máxima à altura do contêiner pai */
+  font-size: 1.5rem;
+
+
+  @media (max-width: 768px) {
+    width: 100%;
+    Padding: 20px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .coluna1 h1 {
+    text-align: left;
+  }
+
+  .coluna1 p {
+  text-align: justify;
+  }
+}
+.coluna1 h2{
+  text-align: right;
+}
+
+.coluna2 {
+  font-family: 'calibri';
+  text-align: left;
+  flex: 1;
+  margin: 10px;
+  padding: 20px 120px 20px 20px;
+  max-height: 100%; /* Limita a altura máxima à altura do contêiner pai */
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+.coluna2 img {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/*BLOCOS DAS INFORMAÇÕES DO IMÓVEL*/
+
+.blocos {
+  background-color: #eee;
+  padding: 30px 0px 40px 0px;
+  margin: 0px;
+  font-size: 1.3rem;
+}
+
+.blocos h2 {
+  font-family: 'calibri';
+}
+
+.blocos button {
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+}
+
+.blocos p {
+  padding: 20px;
+}
+
+.colunax1 {
+  background-image: url(imagens/lzr.jpg);
+  background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  font-family: poppins;
+  text-align: right;
+  flex: 1;
+  margin: 10px;
+  max-height: 100%;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px grey;
+  background-color:rgb(120, 120, 120);
+  background-blend-mode: multiply;
+}
+
+.colunax2 {
+  background-image: url(imagens/dif.jpg);
+  background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  font-family: poppins;
+  text-align: right;
+  flex: 1;
+  margin: 10px;
+  max-height: 100%;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px grey;
+  background-color:rgb(120, 120, 120);
+  background-blend-mode: multiply;
+}
+
+.colunax3 {
+  background-image: url(imagens/apt.jpg);
+  background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  font-family: poppins;
+  text-align: right;
+  flex: 1;
+  margin: 10px;
+  max-height: 100%;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px grey;
+  background-color:rgb(120, 120, 120);
+  background-blend-mode: multiply;
+}
+/*BLOCO DE CONTEÚDO DA ÁREA DE LAZER*/
+.toggle-button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+  font-family: poppins;
+  border: none;
+  padding: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+color: #aaa;}
+
+.conteudo {
+  color: #fff;
+  margin-top: 20px;
+  display: none; /* Inicialmente escondido */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.conteudo.mostrar {
+  display: block;
+  opacity: 1;
+}
+/*BLOCO DE CONTEÚDO DOS DIFERENCIAIS*/
+.toggle-button2 {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+  font-family: poppins;
+  border: none;
+  padding: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.toggle-button2:hover {
+color: #aaa;}
+
+.conteudo2 {
+  color: #fff;
+  margin-top: 20px;
+  display: none; /* Inicialmente escondido */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.conteudo2.mostrar {
+  display: block;
+  opacity: 1;
+}
+/*BLOCO DE CONTEÚDO DOS APARTAMENTOS*/
+.toggle-button3 {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+  font-family: poppins;
+  border: none;
+  padding: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.toggle-button3:hover {
+color: #aaa;}
+
+.conteudo3 {
+  color: #fff;
+  margin-top: 20px;
+  display: none; /* Inicialmente escondido */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.conteudo3.mostrar {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .blocos h2{
+    padding: 30px 30px 0px 30px;
+  }
+
+  .blocos {
+    padding: 0px 10px 40px 10px;
+  }
+  
+  .colunax1 {
+    background-image: url(imagens/lzr.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: poppins;
+    text-align: right;
+    flex: 1;
+    margin: 10px 0px;
+    padding: 20px 20px 20px 120px;
+    max-height: 100%;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px grey;
+    background-color:rgb(120, 120, 120);
+    background-blend-mode: multiply;
+    width: 100%;
+  }
+  
+  .colunax2 {
+    background-image: url(imagens/dif.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: poppins;
+    text-align: right;
+    flex: 1;
+    margin: 10px 0px;
+    padding: 20px 20px 20px 120px;
+    max-height: 100%;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px grey;
+    background-color:rgb(120, 120, 120);
+    background-blend-mode: multiply;
+    width: 100%;
+  }
+  
+  .colunax3 {
+    background-image: url(imagens/apt.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: poppins;
+    text-align: right;
+    flex: 1;
+    margin: 10px 0px;
+    padding: 20px 20px 20px 120px;
+    max-height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 2px 2px 5px grey;
+    background-color:rgb(120, 120, 120);
+    background-blend-mode: multiply;
+  }
+
+}
+
+/*SESSÃO DA LOCALIZAÇÃO*/
+
+.map {
+  font-family: 'calibri';
+  background-image: url(imagens/map.jpg);
+  background-size: cover; /* Ajusta a imagem para cobrir a seção inteira */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  color: white; /* Define a cor do texto como branca para contraste */
+  height: 70%;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  padding: 0px;
+}
+
+.mapdiv {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 35%;
+  height: 100%;
+  padding: 30px 120px;
+  font-size: 1.2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 30px;
+    font-size: 1.4rem;
+  }
+}
+
+/*colunas valores*/
+#valores {
+  font-family: 'calibri';
+  padding: 30px 0px;
+  font-size: 1.3rem;
+}
+.valoresdiv {
+  font-family: 'calibri';
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre as colunas */
+  margin: 10px;
+  padding: 15px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.valorescol {
+  background-color: transparent;
+  color: #333;
+  padding: 5px;
+  flex: 1 1 calc(20% - 20px); /* Para 5 colunas no desktop */
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  border-top: none;
+  font-size: 1.8rem;
+  border: 2px solid #eee;
+  box-shadow: 2px 2px 5px #ccc;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/*FORMULÁRIO*/
+#cadastro {
+  font-size: 1.3rem;
+  background-color: #039C92;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+}
+
+.cadastrodiv1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cadastrodiv {
+  width: 40%;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+form{
+justify-content: center;
+align-items:center;
+}
+
+label {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+font-family: 'calibri';
+    }
+
+    input {
+      width: 100%;
+background-color:rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+border-radius:15px;
+border:solid 2px #ddd;
+    }
+
+input::placeholder{
+color:rgb(100, 100, 100);
+font-family: 'calibri';
+font-size: 1.2rem;
+}
+
+small {
+      display: block;
+      margin-top: 5px;
+      color: #777;
+    }
+
+/* Estilo para a primeira seção do footer */
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Espaçamento entre as seções */
+}
+
+.first-section img {
+    width: 50px; /* Tamanho da logo */
+    height: auto; /* Mantém a proporção */
+    margin-right: 10px; /* Espaçamento à direita da logo */
+}
+
+/* Estilo para a segunda seção do footer */
+footer {
+  
+  font-family: 'calibri';
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.second-section {
+  font-size: 1.3rem;
+  padding: 0px 20px;
+}
+
+.obrigado {
+  font-family: 'calibri';
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
